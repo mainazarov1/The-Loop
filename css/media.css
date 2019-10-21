@@ -1,0 +1,275 @@
+/*@media (min-width: 992px) {*/
+/*    .burger-menu {*/
+/*        display: none;*/
+/*    }*/
+/*    .menu {*/
+/*        display: contents;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 992px) {*/
+/*    .burger-menu {*/
+/*        display: flex;*/
+/*    }*/
+/*    .menu {*/
+/*        display: none;*/
+/*    }*/
+/*    .menu-show{*/
+/*        display: block;*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*        position: absolute;*/
+/*        top: 100px;*/
+/*        left: 0;*/
+/*        width: 100%;*/
+/*        z-index: 2;*/
+/*        background: black;*/
+/*    }*/
+/*    .left-menu li{*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+/*    .right-menu{*/
+/*        margin-top: 130px;*/
+/*    }*/
+/*    .right-menu li{*/
+/*        margin-bottom: 25px;*/
+
+/*    }*/
+
+/*}*/
+@media (min-width: 1201px) {
+    .burger-menu {
+        display: none;
+    }
+    .menu {
+        display: contents;
+    }
+
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .burger-menu {
+        display: none;
+    }
+    .menu {
+        display: contents;
+    }
+    .left-col{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .right-col{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+    .cart {
+        margin-left: 0;
+    }
+    /*.menu {*/
+    /*    position: absolute;*/
+    /*    top: 100px;*/
+    /*    width: 100%;*/
+    /*    left: 0;*/
+    /*    z-index: 2;*/
+    /*}*/
+    /*.menu li {*/
+    /*    background: #212121;*/
+    /*    padding: 16px 32px;*/
+    /*    margin: 0;*/
+    /*}*/
+
+    /*.right-menu li:first-child {*/
+    /*    margin-right: 0;*/
+    /*}*/
+
+    /*.menu li a {*/
+    /*    color: #fff;*/
+    /*}*/
+
+    /*.right-menu {*/
+    /*    top: 250px;*/
+
+    /*}*/
+    .header-offers,
+    .header-hero{
+        text-align: center;
+    }
+    .wear:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #F9F6F1;
+        width: 100%;
+        height: 50%;
+    }
+    .wear:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 246px;
+        background: #F4F4F4;
+        width: 100%;
+        height: 50%;
+    }
+    .left-col{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .right-col{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .catalog-content{
+        display: flex;
+        justify-content: center;
+    }
+    .catalog-title{
+        top: 190px;
+        left: 30px;
+    }
+    .subscribe-content {
+        margin: 0 -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .subscribe span {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .details-items {
+        display: block;
+    }
+    .about-us {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+    .details-info {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        flex-wrap: wrap;
+    }
+    .links {
+        margin: 0 auto;
+        width: 40%;
+        padding: 20px 65px;
+    }
+}
+@media (max-width: 767px) {
+    .left-col,
+    .right-col{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 576px) {
+    .cart svg {
+        margin-right: 0;
+    }
+
+    .cart span {
+        display: none;
+    }
+
+    .header-content {
+        padding: 105px 0 185px 0;
+    }
+
+    .offer-description {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .offer-title {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .header-offers .btn {
+        margin-bottom: 30px;
+    }
+
+    .offer-price .old-price {
+        font-size: 17px;
+        line-height: 10px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .offer-price .new-price {
+        font-size: 30px;
+    }
+
+    .heading {
+        padding: 40px 0 40px;
+    }
+
+    .delivery-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .delivery-text {
+        font-size: 13px;
+    }
+    .container{
+        width: 100%;
+    }
+    .wear-col{
+        padding: 0;
+    }
+    .collect-title{
+        font-size: 16px;
+    }
+    .collect-info{
+        font-size: 11px;
+    }
+    .left-col,
+    .right-col{
+        display: flex;
+        justify-content: center;
+    }
+    .subscribe span{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .subscribe input {
+        margin: 10px 0;
+    }
+    .about-us {
+        width: 70%;
+    }
+    .details-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .links {
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px 65px;
+        text-align: center;
+    }
+    .menu-show{
+        width: 100px;
+        height: 100px;
+        background: saddlebrown;
+    }
+}

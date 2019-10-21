@@ -1,0 +1,463 @@
+/* Общие стили */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a, ul, li{
+    display: block;
+}
+button{
+    outline: none;
+    border: none;
+}
+
+/* Общие стили */
+
+.btn{
+    text-align: center;
+    background: #D7B399;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+header{
+    padding-top: 50px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.burger-menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.burger-menu span{
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    position: relative;
+}
+.burger-menu span:before,
+.burger-menu span:after {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+.burger-menu span:after {
+    bottom: 10px;
+}
+.burger-open span{
+    background: transparent;
+}
+.burger-open span:before{
+    transform: rotate(-40deg);
+    bottom: 0;
+}
+.burger-open span:after{
+    transform: rotate(40deg);
+    bottom: 0;
+}
+.header-logo{
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    color: #212121;
+    font-weight: 500;
+}
+.left-menu li{
+    margin-right: 45px;
+}
+.left-menu li:last-child {
+    margin-right: 0;
+}
+.right-menu{
+    margin-left: auto;
+}
+.right-menu li:first-child{
+    margin-right: 35px;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.cart svg{
+    margin-right: 30px;
+}
+.cart span{
+    display: block;
+    width: 33px;
+    height: 16px;
+    background: #D7B399;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.cart span:before{
+    content: '';
+    position: absolute;
+    border: 8px solid transparent;
+    border-right: 15px solid #D7B399;
+    left: -23px;
+    top: 0;
+}
+.header-content{
+    padding: 125px 0 205px 0;
+}
+.header-item{
+    display: flex;
+    justify-content: space-between;
+}
+.offer-description{
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    margin-top: 35px;
+}
+.offer-title{
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 25px 0 45px;
+}
+.header-offers .btn{
+    width: 240px;
+}
+.header-hero{
+    position: relative;
+}
+.offer-price{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-weight: bold;
+    text-align: right;
+}
+.offer-price .old-price{
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.offer-price .new-price{
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: 0.02em;
+    color: #D84033;
+}
+.owl-dots{
+    position: absolute;
+    width: 100%;
+    bottom: 70px;
+}
+.owl-theme .owl-dots .owl-dot{
+    outline: none;
+}
+.owl-theme .owl-dots .owl-dot span{
+    width: 40px;
+    height: 7px;
+    background: #CECECE;;
+    border-radius: 0;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #D7B399;
+}
+/* Доставка */
+.heading{
+    background: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 70px 0 70px;
+}
+.delivery-title{
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+}
+.delivery-title span{
+    font-weight: 700;
+}
+.delivery-text{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 26px;
+}
+/* Доставка */
+/* Коллекция */
+.wear{
+    position: relative;
+}
+.wear:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #F9F6F1;
+    width: 50%;
+    height: 100%;
+}
+.wear:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #F4F4F4;
+    width: 50%;
+    height: 100%;
+}
+.collect{
+    padding: 60px 0 58px 35px;
+    position: relative;
+    z-index: 2;
+}
+.collect-man{
+    background: url("../images/man.png") no-repeat right bottom;
+}
+.collect-woman{
+    background: url("../images/woman.png") no-repeat right bottom;
+}
+.collect-title{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+}
+.collect-title span{
+    font-weight: 700;
+}
+.collect-info{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 15px 0 30px;
+}
+.collect .btn{
+    width: 80px;
+    padding: 4px;
+    border-radius: 0;
+}
+/* Коллекция */
+
+
+
+.catalog-content{
+    position: relative;
+}
+.catalog-content img{
+    background-size: cover;
+}
+.catalog-title{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 21px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    top: 185px;
+    left: 30px;
+}
+.model-items-head{
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+.model-item{
+    /*border: 2px solid #D7B399;*/
+    padding: 25px;
+    margin: 0 15px 120px;
+    position: relative;
+}
+.model-item:before{
+    content: '';
+    position: absolute;
+    border-left: 3px solid #D7B399;
+    border-top: 3px solid #D7B399;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+}
+.model-item:after{
+    content: '';
+    position: absolute;
+    border-right: 3px solid #D7B399;
+    border-top: 3px solid #D7B399;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
+}
+.col-item{
+    padding: 25px;
+    margin: 0 15px 120px;
+    position: relative;
+}
+.model-item span:first-child:before{
+    content: '';
+    position: absolute;
+    border-left: 3px solid #D7B399;
+    border-bottom: 3px solid #D7B399;
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+}
+.model-item span:first-child:after{
+    content: '';
+    position: absolute;
+    border-right: 3px solid #D7B399;
+    border-bottom: 3px solid #D7B399;
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+    right: 0;
+}
+.model-item img{
+    margin: auto -15px;
+}
+.item-content {
+    text-align: center;
+    margin-top: 25px;
+
+}
+.item-content p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.item-content h5{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 15px;
+    color: #D7B399;
+}
+.model-items .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 55px;
+    background: #D7B399;
+    margin: auto;
+}
+.model-items .btn pre{
+    color: #fff;
+    margin: auto;
+}
+.subscribe{
+    background: #212121;
+    padding: 80px 0 70px 0;
+    margin-top: 100px;
+}
+.subscribe-content{
+    margin: 0 -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #fff;
+
+}
+.subscribe span{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    margin-right: 60px;
+}
+.subscribe input{
+    width: 255px;
+    height: 40px;
+    background: #F9F6F1;
+    margin-right: 35px;
+    padding-left: 5px;
+}
+.subscribe .btn{
+    width: 185px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: center;
+    color: #fff;
+}
+.details{
+    background: #212121;
+    color: #fff;
+    padding: 75px 0 75px;
+    margin-top: 100px;
+}
+.details-items{
+    display: flex;
+    justify-content: space-between;
+}
+.about-us{
+    width: 20%;
+}
+.about-us a{
+    margin-bottom: 30px;
+}
+.about-us p{
+    font-size: 14px;
+    line-height: 22px;
+}
+.details-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.links{
+    margin-left: 65px;
+}
+.description{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.link{
+    font-size: 14px;
+    line-height: 22px;
+    color: #CBCFD4;
+    margin: 5px 0;
+}
+.menu-show{
+    display: flex;
+    flex-flow: column wrap;
+}
