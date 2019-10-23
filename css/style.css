@@ -79,6 +79,9 @@ nav{
 .header-logo{
     margin: 0 auto;
 }
+.menu-show{
+    display: block;
+}
 .menu{
     display: flex;
 }
@@ -413,7 +416,7 @@ nav{
     font-weight: 500;
     font-size: 14px;
     text-align: center;
-    vertical-align: center;
+    padding: 9px;
     color: #fff;
 }
 .details{
@@ -456,8 +459,4 @@ nav{
     line-height: 22px;
     color: #CBCFD4;
     margin: 5px 0;
-}
-.menu-show{
-    display: flex;
-    flex-flow: column wrap;
 }
